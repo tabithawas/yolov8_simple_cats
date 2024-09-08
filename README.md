@@ -1,6 +1,6 @@
 # About  
 
-This contains an object detection model trained on a small dataset of cats. The dataset was created using Roboflow. 
+This contains an object detection model that was trained on a small dataset of cats. The dataset was created using Roboflow. 
 
 The **train_model.py** file was used to train the model on the dataset. The dataset is not included, but the training file could easily be modified to work with another dataset exported from Roboflow as a yolov8 dataset. 
 
