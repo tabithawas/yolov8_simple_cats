@@ -2,17 +2,9 @@
 
 This contains an object detection model that was trained on a small dataset of cats. The dataset was created using Roboflow. 
 
-The **train_model.py** file was used to train the model on the dataset. The dataset is not included, but the training file could easily be modified to work with another dataset exported from Roboflow as a yolov8 dataset. 
-
-The **img_inference.py** file performs inference on the images in the **test_imgs** folder using the **simple_cats.pt** model. It then saves the results (images with bounding boxes) to the **output_imgs** folder. 
-
----
-
 # Future 
 
 There will be files added to perform inference on existing videos and real-time object detection. 
-
----
 
 # Detailed Process
 
@@ -55,5 +47,5 @@ The **img_inference.py** file performs inference on existing images. It takes in
 
 The results are filtered for 70% confidence. 
 
-The **test_imgs** folder contains some testing images that were not included in the dataset. The output_imgs folder contains the results from running **img_inference.py** on the **test_imgs** folder. The results are pretty good considering the small dataset. 
+The **test_imgs** folder contains some testing images that were not included in the dataset. The **output_imgs** folder contains the results from running **img_inference.py** on the **test_imgs** folder. The results are pretty good considering the small dataset. 
 
