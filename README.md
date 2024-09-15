@@ -6,7 +6,7 @@ Files will be added to perform inference on existing videos and real-time object
 
 # Detailed Process
 
-### Dataset creation 
+## Dataset creation 
 Some of the images are pictures that I have taken, and some of the pictures were collected from Google (the Google image results were filtered by having a Creative Commons license). 
 
 The images were uploaded to Roboflow. I annotated all of the images with rectangular bounding boxes. 
@@ -28,15 +28,15 @@ The data set had the following augmentations applied:
 
 This resulted in 3 times the number of training images, so the final numbers for the dataset were 138 training images, 13 validation images, and 6 test images. This was a split of 88% / 8% / 4%. 
 
-### Training 
+## Training 
 The dataset was trained using yolov8. It trained for 100 epochs and the imgsz parameter was set to 640. The **yolov8n.pt** model was used as the base pre-trained model. This model is automatically downloaded when the training is run. 
 
 The training took just under 1 hour. 
 
-### Model 
+## Model 
 The **simple_cats.pt** file is the model created during training. It was originally the **last.pt** file that resulted from the training. 
 
-### Existing Image Inference 
+## Existing Image Inference 
 The **img_inference.py** file performs inference on existing images. It takes in a folder of images and saves the resulting images and their bounding boxes to another folder. 
 
 The results are filtered for 70% confidence. 
