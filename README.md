@@ -1,5 +1,5 @@
 # About  
- This contains files for performing object detection on images. It also contains an object detection model that was trained on a small dataset of cats. The dataset was created using Roboflow. 
+ This contains files for performing object detection on images using yolov8. It also contains an object detection model that was trained on a small dataset of cats. The dataset was created using Roboflow. 
  
 # Future 
 Files will be added to perform inference on existing videos and real-time object detection. 
